@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Omelette Recipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      body {
+        background:hsl(60, 56%, 91%)
+      }
+      
+      h1 {
+        
+        font-size: 2.75rem;
+      }
+      .image-omelette {
+        max-width: 100%;
+        height: auto;
+        width: 650px;
+        border-radius: 10px;
+        margin: 1rem;
+        
+
+      }
+      .container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+     
+      
+      p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+         font-weight: 400px;
+         font-style: normal;
+      }
+      
+      .preparation-time {
+        
+        font-size: 1.5rem;
+      }
+      .Ingredients-marker {
+        border-bottom: 1px solid #ddd;
+       list-style-position: outside;
+        color: black;
+        padding-bottom: 2rem;
+      }
+      
+      .Ingredients-marker li::marker {
+        color: hsl(14, 45%, 36%);
+       
+      }
+      .instructions {
+        border-bottom: 1px solid #ddd;
+      }
+    .instructions {
+      padding-bottom: 2rem;
+    }
+    span {
+      font-weight: bold;
+    }
+    /* layout style */
+    .container {
+        max-width: 45em;
+        background: white;
+        margin: 6rem 0;
+        padding: 1.75rem;
+        border-radius: 1.5rem;
+      }
+      .wrapper {
+        display: grid;
+        place-items: center;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      .preparation-design {
+        color: hsl(332, 51%, 32%)
+      }
+      .preparation-time {
+        background: hsl(330, 100%, 98%);
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        
+        
+      }
+      h1, h2, h3, h4 {
+        font-family: "Young Serif", serif;
+         font-weight: 400;
+        font-style: normal;
+      }
+      h2 {
+        color: hsl(14, 45%, 36%);
+      }
+      li {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+         font-weight: 200px;
+         font-style: normal;
+         
+      }
+      ul {
+        color: hsl(14, 45%, 36%);
+      }
+      
+      .nutrition-section {
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.nutrition-section h2 {
+    font-size: 24px;
+    color: #79433d; /* Kolor podobny do tego na obrazku */
+    margin-bottom: 10px;
+}
+
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.nutrition-table td {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+}
+
+.nutrition-table td:nth-child(2) {
+    text-align: right;
+    font-weight: bold;
+    color: #79433d; /* Kolor tekstu na obrazku */
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none; /* Usunięcie linii pod ostatnim wierszem */
+}
+
+.nutrition-section h2 p {
+  text-align: left; 
+   margin-left: 10px;
+}
+
+ol{
+  list-style-position: outside;
+}
+.padding-ol li::marker {
+  color:  hsl(14, 45%, 36%);
+  font-weight: bold;
+  margin-right: 100px;
+}
+.preparation-time-marker {
+  color: black;
+  font-weight: 0.5rem;
+}
+.preparation-time-marker li::marker {
+  color:hsl(14, 45%, 36%);
+}
+
+    </style>
+    <main class="wrapper">
+    <div class="container">
+      <div class="container-image">
+        <img src="image-omelette.jpeg" alt="Omelette" class="image-omelette" />
+      </div>
+      <h1>Simple Omelette Recipe</h1>
+
+      <p class="paragraph1">
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
+    <div class="preparation-time">
+      <h2 class="preparation-design">Preparation time</h2>
+      <ul class="preparation-time-marker">
+        <li><span>Total:</span> Approximately 10 minutes</li>
+        <li><span>Preparation:</span> 5 minutes</li>
+        <li><span>Cooking:</span> 5 minutes</li>
+     </div>
+      </ul>
+    <div class="Ingredients">
+      <h2>Ingredients</h2>
+      <ul class="Ingredients-marker">
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>
+          Optional fillings: cheese, diced vegetables, cooked meats, herbs
+        </li>
+      </ul>
+    </div>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <ol class="padding-ol">
+        <li>
+          <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+          pepper until they are well mixed. You can add a tablespoon of water or
+          milk for a fluffier texture.
+        </li>
+        <li>
+          <span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add
+          butter or oil.
+        </li>
+        <li>
+          <span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the
+          eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+        </li>
+        <li>
+          <span>Add fillings (optional):</span> When the eggs begin to set at the edges but
+          are still slightly runny in the middle, sprinkle your chosen fillings
+          over one half of the omelette.
+        </li>
+        <li>
+          <span>Fold and serve:</span> As the omelette continues to cook, carefully lift one
+          edge and fold it over the fillings. Let it cook for another minute,
+          then slide it onto a plate.
+        </li>
+        <li><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </div>
+    <div class="Nutrition">
+      <section class="nutrition-section">
+        <h2>Nutrition</h2>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <table class="nutrition-table">
+            <tr>
+                <td>Calories</td>
+                <td><strong>277kcal</strong></td>
+            </tr>
+            <tr>
+                <td>Carbs</td>
+                <td><strong>0g</strong></td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td><strong>20g</strong></td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td><strong>22g</strong></td>
+            </tr>
+        </table>
+    </section>
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
